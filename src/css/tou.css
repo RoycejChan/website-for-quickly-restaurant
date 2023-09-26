@@ -1,0 +1,97 @@
+.tou-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.tou-
+.tou-header {
+    text-align: center;
+}
+
+.tou-title {
+    font-size: 2rem;
+}
+
+.tou-agreement-message {
+    
+}
+
+.tou-main-message {
+    width: 65ch;
+    font-size: 1.25rem;
+}
+
+
+
+.tou-bold {
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+
+
+
+
+
+
+
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 1px solid red;
+    }
+    
+    /* 2xl */
+    @media (max-width: 1536px) {
+    .container {
+    max-width: 1280px;
+    }
+    }
+    
+    /* xl */
+    @media (max-width: 1280px) {
+    .container {
+    max-width: 1024px;
+    }
+    }
+    
+    /* lg */
+    @media (max-width: 1024px) {
+    .container {
+    max-width: 768px;
+    }
+    }
+    
+    /* md */
+    @media (max-width: 768px) {
+    .container {
+    max-width: 640px;
+    }
+    }
+    
+    /* sm */
+    @media (max-width: 640px) {
+    .container {
+    max-width: 475px;
+    }
+    }
+    
+    /* xs */
+    @media (max-width: 475px) {
+    .container {
+    width: 100%;
+    }
+    }
+    
+    /* xs around iphone 6 gen */
+    @media (max-width: 380px) {
+    .container {
+    width: 100%;
+    }
+    }

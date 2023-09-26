@@ -9,7 +9,7 @@ export default function Contact() {
             </h1>
             <p className="contact-message">
                 Send us a message and we’ll get back to you as soon as possible. 
-                You can also reach us by phone at (604) 423-3574. Looking forward 
+                You can also reach us by phone at <span>(604) 423-3574</span>. Looking forward 
                 to hearing from you.
             </p>
             <form action="#" className="contact-form">

@@ -10,7 +10,8 @@ export default function NavBar() {
                     <li className="list-item">Menu</li>
                     <li className="list-item">About Us</li>
                     <li className="list-item">Locations</li>
-                    <li className="list-item">ontact Us</li>
+                    <li className="list-item">Contact Us</li>
+                    <li className="list-item">Hours & Location</li>
                     <button className="nav-btn">Checkout</button>
                 </ul>
         </div>
