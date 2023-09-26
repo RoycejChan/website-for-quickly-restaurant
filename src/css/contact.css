@@ -1,0 +1,136 @@
+.contact-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-header {
+    font-size: 5rem;
+}
+
+.contact-message {
+    font-size: 2rem;
+    width: 40ch;
+    margin-top: -2rem;
+    text-align: center;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    gap: .25rem;
+
+}
+
+.form-input {
+    font-size: 1rem;
+    padding:1em;
+    border:4px solid rgb(151, 145, 255);
+}
+
+.form-btn {
+    font-size: 1rem;
+    padding:1em;
+    border:4px solid var(--main-blue);
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 10%;
+    background-color: var(--main-orange);
+    margin-top: 2rem;
+
+}
+
+
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    }
+    
+    /* 2xl */
+    @media (max-width: 1536px) {
+    .container {
+    max-width: 1280px;
+    }
+    }
+    
+    /* xl */
+    @media (max-width: 1280px) {
+    .container {
+    max-width: 1024px;
+    }
+    }
+    
+    /* lg */
+    @media (max-width: 1024px) {
+    .container {
+    max-width: 768px;
+    }
+    .contact-form {
+        width: 60%;
+    }
+    }
+    
+    /* md */
+    @media (max-width: 768px) {
+    .container {
+    max-width: 640px;
+    }
+    .contact-header {
+        font-size: 3rem;
+    }
+    .contact-message {
+        width: 30ch;
+    }
+    .contact-form {
+        width: 60%;
+    }
+    }
+    
+    /* sm */
+    @media (max-width: 640px) {
+    .container {
+    max-width: 475px;
+    }
+    .contact-header {
+        font-size: 2.25rem;
+        margin-bottom: 2rem;
+    }
+    .contact-message {
+        width: 25ch;
+        font-size: 1.75rem;
+    }
+    .contact-form {
+        width: 70%;
+    }
+    .form-btn {
+        font-size: 1rem;
+        padding:1em;
+        border:4px solid var(--main-blue);
+        width: 35%;
+        margin: 0 auto;
+        border-radius: 10%;
+        background-color: var(--main-orange);
+        margin-top: 2rem;
+    
+    }
+    }
+    
+    /* xs */
+    @media (max-width: 475px) {
+    .container {
+    width: 100%;
+    }
+    }
+    
+    /* xs around iphone 6 gen */
+    @media (max-width: 380px) {
+    .container {
+    width: 100%;
+    }
+    }

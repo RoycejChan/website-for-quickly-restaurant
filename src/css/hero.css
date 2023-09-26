@@ -1,6 +1,40 @@
+/* Position the hero-section relatively to use as a container */
+.hero-section {
+  position: relative;
+}
+
+/* Style the background image */
 .hero-img {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-  }
+  background-image: url('../assets/heroImage1.jpg'); /* Use background-image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Style the hero-content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center precisely */
+  text-align: center; /* Center the button text */
+}
+
+/* Style the h1 element */
+.hero-header {
+  margin: 0;
+  font-size: 8rem;
+  z-index: 1; /* Ensure it's on top of the image */
+}
+
+/* Style the button */
+.hero-btn {
+  margin-top: 20px; /* Add some space between the h1 and the button */
+  padding: 10px 20px; /* Adjust button padding as needed */
+  font-size: 1rem; /* Adjust button font size as needed */
+}
