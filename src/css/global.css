@@ -1,0 +1,15 @@
+:root {
+    --main-orange: #F0881C;
+    --main-blue:#0676C1;   
+} 
+
+body {
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}

@@ -1,0 +1,48 @@
+.navBar-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom:4px solid var(--main-orange);
+    font-size: 1.5rem;
+    background-color: white;
+  }
+  
+  .nav-logo {
+    width: 10rem;
+    flex: 0 0 auto;
+    margin-left:.5rem ; 
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .nav-list li {
+    margin-right: 2rem;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: black; /* Add your desired text color */
+}
+  
+.nav-btn {
+    background-color: var(--main-orange);
+    border: 5px solid var(--main-blue);
+    color:var(--main-blue);
+    border-radius: 15%;
+    padding:1em 2.5em;
+    
+}
