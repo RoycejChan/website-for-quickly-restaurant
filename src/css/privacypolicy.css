@@ -1,34 +1,46 @@
-.tou-container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top:10rem;
+    border: 1px solid red;
 }
 
-.tou-header {
+.privacy-policy-company-name {
+    margin-bottom:-1rem;
+    font-size: 1.5rem;
+}
+.privacy-policy-header {
     text-align: center;
 }
-
-.tou-title {
+.privacy-policy-title {
     font-size: 3rem;
 }
-.tou-effective-date {
-    font-size:1.5rem;
-}
-.tou-company-name {
-    font-size: 2rem;
+.privacy-policy-effective-date {
+    font-size:1.2rem;
 }
 
-.tou-agreement-message {
-    
+.llc-location {
+    display:flex;
+    flex-direction: column;
 }
 
-.tou-main-message {
+.llc-location-details {
+    font-size:1rem;
+    text-align: left;
+    margin-left:4rem;
+}
+
+.privacy-policy-agreement-message {
+
+}
+
+.privacy-policy-main-message {
     width: 65ch;
     font-size: 1.25rem;
 }
-.tou-bold {
+.privacy-bold {
     font-weight: 500;
     font-size: 1.75rem;
 }
@@ -81,7 +93,7 @@
     max-width: 640px;
     }
 
-    .tou-main-message {
+    .privacy-policy-main-message {
     width: 55ch;
     font-size: 1.25rem;
     }  
@@ -93,7 +105,7 @@
     .container {
     max-width: 550px;
     }
-    .tou-main-message {
+    .privacy-policy-main-message {
         width: 40ch;
         font-size: 1.25rem;
         }  
@@ -104,22 +116,22 @@
     .container {
         max-width: 440px;
         border: 1px solid green;
-        display: flex; /* Add display: flex; to center .tou-container */
+        display: flex; /* Add display: flex; to center .privacy-policy-container */
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
     }
-    .tou-main-message {
+    .privacy-policy-main-message {
         width: 40ch;
         font-size: 1rem;
     }
-    .tou-container {
+    .privacy-policy-container {
         max-width: 100%;
         border: 1px solid blue;
     }  
-    .tou-bold {
+    .privacy-policy-bold {
         font-size: 1.5rem;
     }
-    .tou-title {
+    .privacy-policy-title {
         font-size: 2rem;
     }
 }
@@ -129,7 +141,7 @@
     .container {
         width: 370px;
     }
-    .tou-main-message {
+    .privacy-policy-main-message {
         width: 37ch;
         font-size: 1rem;
     }

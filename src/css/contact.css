@@ -3,6 +3,7 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    margin-top: 6rem;
 }
 
 .contact-header {
@@ -126,6 +127,14 @@
     .container {
     width: 100%;
     }
+    .contact-message {
+        width: 20ch;
+        font-size: 1.5rem;
+    }
+    .form-btn {
+        width: 45%;
+    }
+
     }
     
     /* xs around iphone 6 gen */

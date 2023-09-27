@@ -38,3 +38,5 @@
   padding: 10px 20px; /* Adjust button padding as needed */
   font-size: 1rem; /* Adjust button font size as needed */
 }
+@media (max-width: 640px) {
+  }

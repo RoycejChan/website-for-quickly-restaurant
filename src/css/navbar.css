@@ -1,48 +1,84 @@
+/* Existing styles for larger screens */
+
 .navBar-Container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    border-bottom:4px solid var(--main-orange);
-    font-size: 1.5rem;
-    background-color: white;
-  }
-  
-  .nav-logo {
-    width: 10rem;
-    flex: 0 0 auto;
-    margin-left:.5rem ; 
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    flex: 1;
-  }
-  
-  .nav-list li {
-    margin-right: 2rem;
-  }
-  
-  .nav-list a {
-    text-decoration: none;
-    color: black; /* Add your desired text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 4px solid var(--main-orange);
+  font-size: 1.5rem;
+  background-color: white;
 }
-  
+
+.nav-logo {
+  width: 10rem;
+  flex: 0 0 auto;
+  margin-left: 0.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-list li {
+  margin-right: 2rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black; /* Add your desired text color */
+}
+
+.list-item-location {
+  margin-right: 1.5rem;
+}
+
 .nav-btn {
-    background-color: var(--main-orange);
-    border: 5px solid var(--main-blue);
-    color:var(--main-blue);
-    border-radius: 15%;
-    padding:1em 2.5em;
-    
+  background-color: var(--main-orange);
+  border: 5px solid var(--main-blue);
+  color: var(--main-blue);
+  border-radius: 15%;
+  padding: 1em 2.5em;
+}
+
+/* Media query for screens at or below 1280px */
+/* Media query for screens at or below 1280px */
+@media (max-width: 1280px) {
+  .navBar-Container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .nav-list {
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1rem; /* Adjust the gap as needed */
+    align-items: center;
+    justify-items: center; /* Center items horizontally */
+    margin-top: 1rem; /* Add some spacing from the logo */
+  }
+
+  .nav-list li {
+    margin: 0; /* Remove right margin for list items */
+    margin-bottom: 1rem; /* Add bottom margin for spacing between rows */
+  }
+
+  .nav-btn {
+    margin-top: auto; /* Push the button to the bottom */
+  }
+
+  .list-item-location {
+    display: none; /* Hide the location text */
+  }
 }
