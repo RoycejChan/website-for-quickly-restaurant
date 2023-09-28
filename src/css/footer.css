@@ -61,7 +61,6 @@
             .top-footer {
                 display: flex;
                 flex-direction: column;
-                border: 1px solid red;
             }
             .footer-legal, .footer-legal-bottom-row {
                 display: flex;
@@ -70,11 +69,10 @@
                 gap:1rem;
             }
             .bottom-footer {
-                width: 110%;
+                width: 115%;
             }
 
             .bottom-footer-item {
-                border: 1px solid red;
                 margin: 0 auto ;
             }
     }

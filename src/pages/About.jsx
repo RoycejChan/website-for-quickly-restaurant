@@ -13,35 +13,34 @@ export default function About() {
         <div className="aboutus-message">
           <p>
             "Welcome to Quickly Boba Tea, your go-to destination for the most refreshing boba tea drinks in Stockton, CA. Our menu boasts an enticing variety, from classic Milk Tea to invigorating Fruit Tea and delicate Rose Tea, and so much more! But we're not just about drinks; we also offer a delectable selection of Grilled Pork Sandwiches and Rice Bowls that are sure to satisfy your cravings.
-
+            <br/><br />
             You can find us conveniently located south of Brandon Blvd, right at the intersection of Parsons Avenue and Oakfield Drive. Whether you're in the mood to dine in or prefer the comfort of your own space, we've got you covered. Order online for speedy carryout or delivery service!
-
+            <br /> <br />
             At Quickly Boba Tea, we take pride in being your trusted counter-serve cafe chain for authentic Taiwanese bubble tea, available in an array of delightful flavors. Join us today to experience the perfect blend of taste and tradition."
           </p>
         </div>
       <div className="location-details-container">
         <h2 className="location-details-header">Location Details</h2>
+        <p className="reminder">No Online Orders Past 9 PM</p>
         <div className="location-details-content">
 
           <ul className="location-details-list">
             <li>
-              <p>2092383732</p>
+              <p>(209)-227-8596</p>
             </li>
             <li>
-              <p>RobinHood Street</p>
+              <p>960 W Robinhood Dr, Stockton, CA 95207</p>
             </li>
             </ul>
           <ul className="location-details-list">
             <li>
-              <p>Business Hours: 11am-9pm</p>
-              <p>No online order past 9pm</p>
+              <p>Business Hours: 11am-10pm</p>
             </li>
             <li>
-              <p>Free parking</p>
+              <p>Free parking, Dine In, No delivery</p>
             </li>
           </ul>
           <h1 className="Google">Insert Yasdlorem   Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore praesentium a aut et placeat consequatur porro eius molestiae debitis numquam vitae nobis, architecto unde tempore ipsa repellendus ex in. our Image Here</h1>
-            {/* ENTER ABOUT US/HISTORY of restuarant */}
         </div>
       </div>
     </div>

@@ -19,24 +19,22 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center precisely */
-  text-align: center; /* Center the button text */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
 }
 
-/* Style the h1 element */
 .hero-header {
   margin: 0;
   font-size: 8rem;
-  z-index: 1; /* Ensure it's on top of the image */
+  z-index: 1; 
 }
 
-/* Style the button */
 .hero-btn {
-  margin-top: 20px; /* Add some space between the h1 and the button */
-  padding: 10px 20px; /* Adjust button padding as needed */
-  font-size: 1rem; /* Adjust button font size as needed */
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  font-size: 1rem;
 }
 @media (max-width: 640px) {
   }

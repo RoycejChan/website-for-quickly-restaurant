@@ -1,7 +1,7 @@
 import React from "react";
 import image1 from "../../assets/heroImage1.jpg"
 
-export default function Hero() {
+export default function homeHero() {
     return (
         <div className="hero-section">
             <img src={image1} alt="" className="hero-img" />
