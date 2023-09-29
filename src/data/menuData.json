@@ -1,0 +1,21 @@
+{
+    "slush": [
+      { "name": "Dragon Slush", "price": "$4.99" },
+      { "name": "Peach Mango Slush", "price": "$4.99" },
+      { "name": "Starberry Lemon Slush", "price": "$4.99" },
+      { "name": "Thai Slush", "price": "$4.99" },
+      { "name": "Lavender Slush", "price": "$4.99" },
+      { "name": "Taro Milk Slush", "price": "$4.99" },
+      { "name": "Sesane Slush", "price": "$4.99" },
+      { "name": "Red Bean Slush", "price": "$4.99" },
+      { "name": "Guava Slush", "price": "$4.99" },
+      { "name": "Tiger Slush", "price": "$4.99" },
+      { "name": "Yogurt Slush", "price": "$4.99" },
+      { "name": "Starberry Slush", "price": "$4.99" },
+      { "name": "Rose Slush", "price": "$4.99" },
+      { "name": "Rasberry Slush", "price": "$4.99" }
+    ],
+    "milk-Tea": [
+        {"name": "Bruh Tea", "price":"$4.99"}
+    ]
+  }

@@ -1,0 +1,81 @@
+.menu-header {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.menu-header h1 {
+    border-bottom: 3px solid blue;
+}
+
+.menu-nav {
+    display: flex;
+    gap:2.5rem;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.menu-nav-item {
+    background: green;
+    padding:.5em .75em;
+    border-radius: 10%;
+}
+
+.menu-container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem; /*dfkljsfsdjfoisjoisjfsiojf*/
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    }
+    
+    /* 2xl */
+    @media (max-width: 1536px) {
+    .menu-container {
+    max-width: 1280px;
+    }
+    }
+    
+    /* xl */
+    @media (max-width: 1280px) {
+    .menu-container {
+    max-width: 1024px;
+    }
+    }
+    
+    /* lg */
+    @media (max-width: 1024px) {
+    .menu-container {
+    max-width: 768px;
+    }
+    }
+    
+    /* md */
+    @media (max-width: 768px) {
+    .menu-container {
+    max-width: 640px;
+    }
+    }
+    
+    /* sm */
+    @media (max-width: 640px) {
+    .menu-container {
+    max-width: 475px;
+    }
+    }
+    
+    /* xs */
+    @media (max-width: 475px) {
+    .menu-container {
+    width: 100%;
+    }
+    }
+    
+    /* xs around iphone 6 gen */
+    @media (max-width: 380px) {
+    .menu-container {
+    width: 100%;
+    }
+    }

@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="aboutus-container">
       <div className="aboutus-img-container">
-        <img src={aboutusHero} alt="" className="aboutus-img" />
+        <img src={aboutusHero} alt="" className="aboutus-img" data-aos="slide-right" data-aos-duration="2000"/>
       </div>
       <div className="aboutus-content">
         <h1 className="aboutus-header">ABOUT US</h1>

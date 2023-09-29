@@ -6,7 +6,7 @@ import Footer from "./components/Navigation/Footer";
 import Termsofuse from "./pages/termsofuse";
 import Privacypolicy from "./pages/privacypolicy";
 import About from "./pages/About";
-
+import Menu from "./pages/menu";
 import Layout from "./components/Navigation/Homelayout"; 
 
 
@@ -19,6 +19,8 @@ import "./css/tou.css"
 import "./css/aboutus.css"
 import "./css/privacypolicy.css"
 import "./css/home.css"
+import "./css/menu.css";
+
 
 export default function App() {
   return (
@@ -33,6 +35,7 @@ export default function App() {
               </Layout>
             }
           />
+         <Route path="/menu/*" element={<Menu />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
           <Route path="/Termsofuse" element={<Termsofuse />} />

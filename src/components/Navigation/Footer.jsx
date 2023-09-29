@@ -14,7 +14,7 @@ export default function Footer() {
                     <li className="footer-list-item"><a target="_blank" href="https://www.yelp.com/biz/quickly-stockton"><img src={YelpLogo} alt="Yelp" /></a></li>
                 </ul>
                 <ul className="footer-list">
-                    <li className="footer-list-item"><Link to="/Contact">JOBS</Link></li>
+                    <li className="footer-list-item" ><Link to="/Contact">JOBS</Link></li>
                 </ul>
             </div>
             <div className="bottom-footer">
