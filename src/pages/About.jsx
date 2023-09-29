@@ -1,6 +1,6 @@
 import React from "react";
 import aboutusHero from "../assets/aboutusheader.jpg";
-
+import locationImage from "../assets/quickly-location-img.png"
 export default function About() {
   return (
     <div className="aboutus-container">
@@ -20,28 +20,44 @@ export default function About() {
           </p>
         </div>
       <div className="location-details-container">
-        <h2 className="location-details-header">Location Details</h2>
-        <p className="reminder">No Online Orders Past 9 PM</p>
+              <h2 className="location-details-header">Location Details</h2>
         <div className="location-details-content">
-
-          <ul className="location-details-list">
-            <li>
-              <p>(209)-227-8596</p>
-            </li>
-            <li>
-              <p>960 W Robinhood Dr, Stockton, CA 95207</p>
-            </li>
-            </ul>
-          <ul className="location-details-list">
-            <li>
-              <p>Business Hours: 11am-10pm</p>
-            </li>
-            <li>
-              <p>Free parking, Dine In, No delivery</p>
-            </li>
-          </ul>
-          <h1 className="Google">Insert Yasdlorem   Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore praesentium a aut et placeat consequatur porro eius molestiae debitis numquam vitae nobis, architecto unde tempore ipsa repellendus ex in. our Image Here</h1>
+          <div className="location-details-list-container">
+              <ul className="location-details-list">
+                <li>
+                  <p>(209)-227-8596</p>
+                </li>
+                <li>
+                  <p>960 W Robinhood Dr, Stockton, CA 95207</p>
+                </li>
+                <li>
+                  <p>Business Hours: 11am-10pm Everyday</p>
+                </li>
+                </ul>
+              <ul className="location-details-list">
+                <li>
+                  <p>Free parking</p>
+                </li>
+                <li>
+                  <p>Dine In & Takeout</p>
+                </li>
+                <li>
+                  <p>No delivery</p>
+                </li>
+                <li>
+                  <p className="reminder">No Online Orders Past 9 PM</p>
+                </li>
+              </ul>
+          </div>
+            <div className="aboutus-location-img">
+              <a target="_blank" href="https://www.google.com/maps/place/Quickly/@37.9996646,-121.3182908,17z/data=!4m6!3m5!1s0x80900c5a8e60dbbb:0xd7f81272128a94ec!8m2!3d37.9999786!4d-121.3175287!16s%2Fg%2F1ptz6j6l7?entry=ttu">
+                <img src={locationImage} alt="" className="google-location-img" />
+              </a>
+            </div>
         </div>
+      </div>
+      <div className="aboutus-history">
+
       </div>
     </div>
   );

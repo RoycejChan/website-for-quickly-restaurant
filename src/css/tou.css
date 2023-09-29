@@ -100,10 +100,9 @@
 @media (max-width: 475px) {
     .container {
         max-width: 440px;
-        border: 1px solid green;
-        display: flex; /* Add display: flex; to center .tou-container */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
     }
     .tou-main-message {
         width: 40ch;
