@@ -1,6 +1,8 @@
 :root {
     --main-orange: #F0881C;
     --main-blue: #0676C1;
+    --main-green:#00ff00;
+    --main-text:#254653;
 }
 
 
@@ -10,6 +12,7 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
     font-family: "Patua One", sans-serif;
+    background-color: #FFF8F2;
 }
 
 li {

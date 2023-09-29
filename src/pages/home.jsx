@@ -19,62 +19,66 @@ import renoimage from "./../assets/quicklyGallery/renoimage.jpg"
 
 export default function Home() {
     return (
-        <div className="photo-gallery-container">
-            <div className="photo-gallery">
+        <div className="home-container">
+                <div className="photo-gallery-container">
+                    <div className="gallery-header-container">
+                        <h1 className="photo-gallery-header">Check out our <br /> <span className="Gallery">Gallery</span></h1>
+                    </div>
+                    <div className="photo-gallery">
 
-                <div className="photo-column">
-                    <div className="photo" id="one" >
-                        <img src={image1} alt="" />
-                    </div>
-                    <div className="photo" id="two">
-                        <img src={image3} alt="" />
-                    </div>                    
-                    <div className="photo" id="three">
-                        <img src={image15} alt="" />
-                    </div>
-                    <div className="photo" id="four">
-                        <img src={image19} alt="" />
-                    </div>   
+                        <div className="photo-column">
+                            <div className="photo" id="one" >
+                                <img src={image1} alt="" className=" orange-border"/>
+                            </div>
+                            <div className="photo" id="two">
+                                <img src={image3} alt="" className="green-border" />
+                            </div>                    
+                            <div className="photo" id="three">
+                                <img src={image15} alt="" className="blue-border" />
+                            </div>
+                            <div className="photo" id="four">
+                                <img src={image19} alt="" className="orange-border"/>
+                            </div>   
 
-                </div>
-                <div className="photo-column">
-                    <div className="photo" id="five">
-                        <img src={image13} alt="" />
-                    </div>
-                    <div className="photo" id="six">
-                        <img src={image5} alt="" />
-                    </div>                    
-                    <div className="photo" id="seven">
-                        <img src={image6} alt="" />
-                    </div>  
-                </div>    
-                <div className="photo-column">
-                    <div className="photo" id="eight">
-                        <img src={image7} alt="" />
-                    </div>
-                    <div className="photo" id="nine">
-                        <img src={image8} alt="" />
-                    </div>                    
-                    <div className="photo" id="ten">
-                        <img src={image10} alt="" />
-                    </div>
-                    <div className="photo" id="eleven">
-                        <img src={image18} alt="" />
-                    </div>   
-                </div>
-                <div className="photo-column">
-                    <div className="photo" id="twelve">
-                        <img src={renoimage} alt="" />
-                    </div>
-                    <div className="photo" id="thirteen">
-                        <img src={image16} alt="" />
-                    </div>                    
-                    <div className="photo" id="fourteen">
-                        <img src={image17} alt="" />
+                        </div>
+                        <div className="photo-column">
+                            <div className="photo" id="five">
+                                <img src={image13} alt="" className="orange-border"/>
+                            </div>
+                            <div className="photo" id="six">
+                                <img src={image5} alt="" className="blue-border"/>
+                            </div>                    
+                            <div className="photo" id="seven">
+                                <img src={image6} alt="" className="green-border" />
+                            </div>  
+                        </div>    
+                        <div className="photo-column">
+                            <div className="photo" id="eight">
+                                <img src={image7} alt="" className="blue-border" />
+                            </div>
+                            <div className="photo" id="nine">
+                                <img src={image8} alt="" className="green-border"/>
+                            </div>                    
+                            <div className="photo" id="ten">
+                                <img src={image10} alt="" className="orange-border" />
+                            </div>
+                            <div className="photo" id="eleven">
+                                <img src={image18} alt="" className="blue-border" />
+                            </div>   
+                        </div>
+                        <div className="photo-column">
+                            <div className="photo" id="twelve">
+                                <img src={renoimage} alt="" className="orange-border"/>
+                            </div>
+                            <div className="photo" id="thirteen">
+                                <img src={image16} alt="" className="blue-border"/>
+                            </div>                    
+                            <div className="photo" id="fourteen">
+                                <img src={image17} alt="" className="green-border"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
     )
 }

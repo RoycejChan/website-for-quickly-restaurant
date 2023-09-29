@@ -16,7 +16,10 @@
     text-align: center;
 }
 
-
+.phone-number {
+    color:var(--main-orange);
+    text-decoration: underline;
+}
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -42,6 +45,7 @@
     margin-top: 2rem;
 
 }
+
 
 
 .container {

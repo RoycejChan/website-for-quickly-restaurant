@@ -4,10 +4,12 @@ import image1 from "../../assets/heroImage1.jpg"
 export default function homeHero() {
     return (
         <div className="hero-section">
-            <img src={image1} alt="" className="hero-img" />
+            <div className="h-carousel">
+                <img src={image1} alt="" className="hero-img" />
+            </div>
             <div className="hero-content">
                 <h1 className="hero-header">QUICKLY</h1>
-                <button className="hero-btn">Order Now</button>
+                <button className="hero-btn">View our Menu</button>
             </div>
         </div>
     )

@@ -17,13 +17,17 @@
   
   .aboutus-content {
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    font-size: 3rem;
-    color: white; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 4rem;
+    background: linear-gradient(to right, var(--main-orange), var(--main-green));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Hide the original text color */
+    -webkit-text-stroke: 1px black; /* Width and color of the border */
+  
   }
   
   

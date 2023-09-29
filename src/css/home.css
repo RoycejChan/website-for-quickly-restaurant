@@ -4,6 +4,45 @@
     margin:auto;
     padding:1rem 0;
 }
+.gallery-header-container {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    margin: 5rem 0; 
+    overflow: hidden; 
+}
+
+.gallery-header-container::before,
+.gallery-header-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+.gallery-header-container::before {
+    left: 0;
+    transform: translateY(-50%);
+    width: 30%; 
+    transform-origin: right;
+}
+
+.gallery-header-container::after {
+    right: 0;
+    transform: translateY(-50%);
+    width: 30%;
+    transform-origin: left;
+}
+
+.gallery-header-container:hover::before,
+.gallery-header-container:hover::after {
+    width: 0%; 
+}
+
+.Gallery {
+    font-size: 5rem;
+}
 
 .photo-gallery {
     display:flex;
@@ -29,7 +68,15 @@
     scale: 1.2;
 }
 
-    
+.green-border {
+    border: 3px solid green;
+}    
+.blue-border {
+    border: 3px solid  var(--main-blue);
+}
+.orange-border {
+    border: 3px solid var(--main-orange);
+}
     /* 2xl */
     @media (max-width: 1536px) {
     .photo-gallery-container {
@@ -58,6 +105,32 @@
     }
     .photo img:hover {
         scale: 1;
+    }
+
+    .gallery-header-container {
+        font-size: 1.85rem;
+        text-align: center;
+        margin: 5rem 0; 
+    }
+    
+    .gallery-header-container::before,
+    .gallery-header-container::after {
+
+    }
+    .gallery-header-container::before {
+
+    }
+    
+    .gallery-header-container::after {
+
+    }
+    
+    .gallery-header-container:hover::before,
+    .gallery-header-container:hover::after {
+    }
+    
+    .Gallery {
+        font-size: 4rem;
     }
 
     #one, #two, #six, #ten, #fourteen{
@@ -100,10 +173,10 @@
             display:none;
         }
         .photo-gallery-container {
-            width: 105%;
+            width: 110%;
             display: flex;
-            justify-content: center;
-            margin-left:.5rem;
+            flex-direction: column;
+            align-items: center; 
         }
     
         #one, #two, #six, #ten, #fourteen{
@@ -121,7 +194,6 @@
         
         }
         
-        
         .photo img {
             width: 100%;
             height: 100%;
@@ -129,7 +201,18 @@
             object-fit: cover;
             transition: scale .2s ;
         }
-    
+        .gallery-header-container {
+            font-size: 1.75rem;
+            text-align: center;
+            margin: 2rem 0px; /* Reduce the top margin */
+        }
+        
+        
+        .Gallery {
+            font-size: 4rem;
+        }
+
+
     }
     
     /* xs around iphone 6 gen */
@@ -138,6 +221,12 @@
             width: 100%;
             display: flex;
             justify-content: center;
+        }
+        .photo-gallery-header {
+            font-size: 3rem;
+        }   
+        .Gallery {
+            font-size: 3rem;
         }
     }
 
