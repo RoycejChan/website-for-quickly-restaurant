@@ -12,7 +12,7 @@ export default function NavBar() {
         <li className="list-item"><Link to="/menu">Menu</Link></li>
         <li className="list-item"><Link to="/about">About Us</Link></li>
         <li className="list-item"><Link to="/contact">Contact Us</Link></li>
-        <button className="nav-btn">Checkout</button>
+        <button className="nav-btn"><Link to="checkout">Checkout</Link></button>
       </ul>
       <img src={pinIcon} alt="" data-aos="slide-down" data-aos-duration="2000"/>
       <li className="list-item-location">Stockton CA</li>

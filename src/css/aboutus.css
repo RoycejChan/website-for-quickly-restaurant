@@ -1,18 +1,21 @@
 .aboutus-container {
     position: relative;
+    color:var(--main-text);
   }
   
   .aboutus-img-container {
     position: relative;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .aboutus-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; 
+  }
+
+  .aboutus-img {
+    background-image: url('../assets/aboutusheader.jpeg');
+    background-repeat: no-repeat;
+    height: 100%; /* Use 100% height to cover the full viewport height */
+    background-position: center top;
+    background-size: cover; /* Cover the entire container while maintaining aspect ratio */
   }
   
   .aboutus-content {
@@ -55,7 +58,6 @@
 
 .location-details-list li {
     text-align: start;
-    list-style-type: '\1F44D';
     margin-left:4rem;
     font-size: 1.8rem;
 }
@@ -91,8 +93,20 @@
   padding-right: 0.5rem;
   }
   
-  @media (max-width: 1024px) {
 
+
+  @media (max-width: 1130px) {
+    .aboutus-header {
+      font-size: 7rem;
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    .aboutus-header {
+      font-size: 6.5rem;
+      width: 8ch;
+    }
 
     .aboutus-message {
       font-size: 1.2rem;
@@ -111,7 +125,6 @@
 
   .location-details-list li {
       text-align: start;
-      list-style-type: '\1F44D';
       font-size: 1.5rem;
   }
 
@@ -121,12 +134,6 @@
   }
 
 /* ASDNMSAdjnaoidjaoidjaoidjaoidjaod */
-.aboutus-img-container {
-  display: none;
-}
-.aboutus-content {
-  display: none;
-}
   }
 
   @media (max-width: 800px) {
@@ -188,6 +195,14 @@
   
 
   @media (max-width: 510px) {
+
+
+    .aboutus-header {
+      font-size: 6.5rem;
+      width: 5ch;
+      text-align: center;
+    }
+
     .aboutus-message {
       font-size: 1rem;
       width: 50ch;
@@ -224,7 +239,14 @@
       
     }
   }
+  @media (max-width: 410px) {
+    .aboutus-header {
+      font-size: 5.5rem;
+      width: 5ch;
+      text-align: center;
+    }
 
+  }
 
   @media (max-width: 380px) {
 

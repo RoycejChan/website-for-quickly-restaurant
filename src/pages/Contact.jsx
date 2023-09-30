@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
 
     return (
-        <div className="contact-container container">
+        <div className="contact-container container" data-aos="zoom-in-down">
             <h1 className="contact-header">
                 CONTACT US
             </h1>

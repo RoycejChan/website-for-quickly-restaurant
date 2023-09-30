@@ -1,11 +1,11 @@
 import React from "react";
-import aboutusHero from "../assets/aboutusheader.jpg";
+import aboutusHero from "../assets/aboutusheader.jpeg";
 import locationImage from "../assets/quickly-location-img.png"
 export default function About() {
   return (
     <div className="aboutus-container">
       <div className="aboutus-img-container">
-        <img src={aboutusHero} alt="" className="aboutus-img" data-aos="slide-right" data-aos-duration="2000"/>
+        <img src={aboutusHero} alt="" className="aboutus-img" data-aos="slide-right" data-aos-duration="1000"/>
       </div>
       <div className="aboutus-content">
         <h1 className="aboutus-header">ABOUT US</h1>
@@ -25,27 +25,27 @@ export default function About() {
           <div className="location-details-list-container">
               <ul className="location-details-list">
                 <li>
-                  <p>(209)-227-8596</p>
+                  <p>📞(209)-227-8596</p>
                 </li>
                 <li>
-                  <p>960 W Robinhood Dr, Stockton, CA 95207</p>
+                  <p>📍 960 W Robinhood Dr, Stockton, CA 95207</p>
                 </li>
                 <li>
-                  <p>Business Hours: 11am-10pm Everyday</p>
+                  <p>🏪Business Hours: 11am-10pm Everyday</p>
                 </li>
                 </ul>
               <ul className="location-details-list">
                 <li>
-                  <p>Free parking</p>
+                  <p>🚗Free parking</p>
                 </li>
                 <li>
-                  <p>Dine In & Takeout</p>
+                  <p>🥡Dine In & Takeout</p>
                 </li>
                 <li>
-                  <p>No delivery</p>
+                  <p>🙅‍♀️No delivery</p>
                 </li>
                 <li>
-                  <p className="reminder">No Online Orders Past 9 PM</p>
+                  <p className="reminder">❌No Online Orders Past 9 PM</p>
                 </li>
               </ul>
           </div>

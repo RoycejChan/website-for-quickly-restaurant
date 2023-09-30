@@ -7,13 +7,14 @@
 }
 
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     box-sizing: border-box;
     font-family: "Patua One", sans-serif;
     background-color: var(--main-background);
+    height:100%;
 }
 
 li {
@@ -24,3 +25,26 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* Create a CSS class for fading transitions */
+.page-fade-enter {
+    opacity: 0;
+  }
+  
+  .page-fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+  
+  .page-fade-exit {
+    opacity: 1;
+  }
+  
+  .page-fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+
+  button {
+    cursor: pointer;
+  }

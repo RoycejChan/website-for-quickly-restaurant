@@ -7,6 +7,7 @@ import Termsofuse from "./pages/termsofuse";
 import Privacypolicy from "./pages/privacypolicy";
 import About from "./pages/About";
 import Menu from "./pages/menu";
+import Checkout from "./pages/checkout";
 import Layout from "./components/Navigation/Homelayout"; 
 
 
@@ -20,6 +21,7 @@ import "./css/aboutus.css"
 import "./css/privacypolicy.css"
 import "./css/home.css"
 import "./css/menu.css";
+import "./css/checkout.css";
 
 
 export default function App() {
@@ -38,8 +40,10 @@ export default function App() {
          <Route path="/menu/*" element={<Menu />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/Termsofuse" element={<Termsofuse />} />
           <Route path="/Privacypolicy" element={<Privacypolicy />} />
+          
       </Routes>
       <Footer />
     </Router>

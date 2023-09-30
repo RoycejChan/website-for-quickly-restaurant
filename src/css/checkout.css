@@ -1,0 +1,61 @@
+.checkout-container {
+    margin-top: 5rem;
+    border: 1px solid red;
+}
+
+.checkout-container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    }
+    
+    /* 2xl */
+    @media (max-width: 1536px) {
+    .checkout-container {
+    max-width: 1280px;
+    }
+    }
+    
+    /* xl */
+    @media (max-width: 1280px) {
+    .checkout-container {
+    max-width: 1024px;
+    }
+    }
+    
+    /* lg */
+    @media (max-width: 1024px) {
+    .checkout-container {
+    max-width: 768px;
+    }
+    }
+    
+    /* md */
+    @media (max-width: 768px) {
+    .checkout-container {
+    max-width: 640px;
+    }
+    }
+    
+    /* sm */
+    @media (max-width: 640px) {
+    .checkout-container {
+    max-width: 475px;
+    }
+    }
+    
+    /* xs */
+    @media (max-width: 475px) {
+    .checkout-container {
+    width: 100%;
+    }
+    }
+    
+    /* xs around iphone 6 gen */
+    @media (max-width: 380px) {
+    .checkout-container {
+    width: 100%;
+    }
+    }

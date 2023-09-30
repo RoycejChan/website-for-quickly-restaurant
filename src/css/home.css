@@ -10,6 +10,8 @@
     position: relative;
     margin: 5rem 0; 
     overflow: hidden; 
+    color:var(--main-text);
+
 }
 
 .gallery-header-container::before,
@@ -113,21 +115,6 @@
         margin: 5rem 0; 
     }
     
-    .gallery-header-container::before,
-    .gallery-header-container::after {
-
-    }
-    .gallery-header-container::before {
-
-    }
-    
-    .gallery-header-container::after {
-
-    }
-    
-    .gallery-header-container:hover::before,
-    .gallery-header-container:hover::after {
-    }
     
     .Gallery {
         font-size: 4rem;
@@ -169,9 +156,6 @@
     /* xs */
     @media (max-width: 475px) {
 
-        .hero-section {
-            display:none;
-        }
         .photo-gallery-container {
             width: 110%;
             display: flex;

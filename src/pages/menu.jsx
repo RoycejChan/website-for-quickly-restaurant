@@ -2,16 +2,17 @@ import React from "react";
 import { Routes, Route, Link, Outlet, useParams } from "react-router-dom";
 import Category from "./menuCategories/Category";
 import data from "../data/menuData.json"; 
-
+import bubbleteaimg from "../assets/bubbleteaimg.png"
 
 export default function Menu() {
     const { menuItemId } = useParams();
 
   return (
-    <div className="menu-container">
+    <div className="menu-background">
+    <div className="menu-container" data-aos="slide-up">
 
       <div className="menu-header">
-        <h1>Our Menu</h1>
+        <h1>Our Menu <span className="menu-header-icon"><img src={bubbleteaimg} alt="" className="tilt-animation" /></span></h1>
       </div>
 
 
@@ -42,6 +43,7 @@ export default function Menu() {
             <Routes>
             <Route path="/Category/:menuItemId" element={<Category menuData={data} />} />
             </Routes>
+    </div>
     </div>
   );
 }

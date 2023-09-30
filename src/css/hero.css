@@ -1,18 +1,8 @@
-/* Position the hero-section relatively to use as a container */
 .hero-section {
   position: relative;
+  width: 100%;
 }
 
-/* Style the background image */
-.hero-img {
-  background-image: url('../assets/heroImage1.jpg'); /* Use background-image */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-/* Style the hero-content */
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -24,7 +14,6 @@
   transform: translate(-50%, -50%); 
   text-align: center; 
 }
-
 
 
 .hero-header {
@@ -71,3 +60,11 @@
   }
 }
 
+@media (max-width: 1536px) {
+  .checkout-container {
+  max-width: 1280px;
+  }
+  .hero-img {
+    width: 100% !important;
+  }
+  }

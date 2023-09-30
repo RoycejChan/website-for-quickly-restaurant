@@ -1,13 +1,48 @@
+.menu-background {
+    background-image: url('../assets/menubackground.jpg'); /* Specify the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; /* Set the height to 100% of the viewport height */
+    margin-top: -5rem;
+}
+
+.menu-container {
+    margin: 0; /* Remove default margin */
+    padding-bottom:15rem;
+}
+
 .menu-header {
     display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 2rem;
+    color:var(--main-text);
 }
 
 .menu-header h1 {
+    display: flex; /* Make the text and image flex items */
+    align-items: center; /* Center vertically within the h1 element */
     border-bottom: 3px solid blue;
+    margin-top: 10rem;
+}
+.menu-header-icon img {
+    width: 8rem; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    animation: tilt infinite 2s ease-in-out; /* Apply the tilt animation */
 }
 
+@keyframes tilt {
+    0% {
+        transform: rotate(0deg); /* Initial position */
+    }
+    50% {
+        transform: rotate(-10deg); /* Rotate left at 50% of the animation duration */
+    }
+    100% {
+        transform: rotate(10deg); /* Rotate right at the end of the animation */
+    }
+}
 .menu-nav {
     display: flex;
     gap:2.5rem;
@@ -20,7 +55,13 @@
     background: green;
     padding:.5em .75em;
     border-radius: 10%;
+    transition: background-color 0.2s ease;    
 }
+
+.menu-nav-item:hover {
+    background-color: var(--main-orange);
+}
+
 
 .menu-container {
     max-width: 1536px;
@@ -29,28 +70,37 @@
     margin-top: 10rem; /*dfkljsfsdjfoisjoisjfsiojf*/
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    /* border: 1px solid red; */
     }
     
 .menu-object {
-    /* border:1px solid green; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:3rem;
     font-size: .9rem;
     margin-top: 3rem;
+    color:var(--main-text);
+    cursor: pointer;
 }
 
 .menu-object-flex {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* border: 1px solid blue; */
     width: 22%;
     box-shadow: 1px 1px 1px 1px black;
     text-align: center;
     padding:0rem 2rem;
+    background-color: whitesmoke;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--main-orange), red); /* Gradient border */
+    border-image-slice: 1; /* Ensure full border width */
+    transition: border-width 0.1s; /* Apply a transition to the border-width property */
+}
+
+.menu-object-flex:hover {
+    border-width: 7px; /* Increase border width on hover (adjust as needed) */
 }
 
 .menuItem-price {
@@ -62,6 +112,9 @@
     .menu-container {
     max-width: 1280px;
     }
+    .menu-header {
+        margin-top: -10rem;
+    }
     }
     
     /* xl */
@@ -70,7 +123,7 @@
     max-width: 1024px;
     }
     .menu-header {
-        margin-top: -6rem;
+        margin-top: -10rem;
     }
     }
     
@@ -96,6 +149,9 @@
     .menu-container {
     max-width: 640px;
     }
+    .menu-header {
+        font-size: 2rem;
+    }
     }
     
     /* sm */
@@ -111,7 +167,9 @@
         gap:.5rem;
         width: 80%;
     }
-
+    .menu-header {
+        font-size: 1.5rem;
+    }
     }
     
     /* xs */
@@ -119,12 +177,14 @@
     .menu-container {
     width: 100%;
     }
-    .menu-object {
-        /* border: 1px solid red; */
-        margin-left:3rem;
-    }
     .menu-nav-item {
         font-size: 1.3rem;
+    }
+    .menu-nav {
+        gap:2rem;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        margin-left: -3rem;
     }
     }
     
@@ -136,6 +196,10 @@
 
     .menu-object {
         /* border: 1px solid red; */
-        margin-left:0rem;
+        margin-left:-.8rem;
+    }
+    .menu-nav {
+        margin-left: -3rem;
+        margin-right: 1rem;
     }
     }
