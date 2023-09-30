@@ -18,30 +18,29 @@ export default function Menu() {
 
       <nav className="menu-nav-container">
                     <ul className="menu-nav">
-                        <li className="menu-nav-item"><Link to="/menu/Category">Slush(Ice)</Link></li>
-                        <li className="menu-nav-item">Milk Tea</li>
-                        <li className="menu-nav-item">Smoothie</li>
-                        <li className="menu-nav-item">Milk Shake</li>
-                        <li className="menu-nav-item">Snow</li>
-                        <li className="menu-nav-item">Espresso Premium Tea</li>
-                        <li className="menu-nav-item">Rose Tea</li>
-                        <li className="menu-nav-item">Yogurt Drinks</li>
-                        <li className="menu-nav-item">Flavored Tea</li>
-                        <li className="menu-nav-item">Flirty Milk</li>
-                        <li className="menu-nav-item">Fruity Delight</li>
-                        <li className="menu-nav-item">Coffee</li>
-                        <li className="menu-nav-item">Snack</li>
-                        <li className="menu-nav-item">Egg Puffs</li>
-                        <li className="menu-nav-item">Rice Bowl</li>
-                        <li className="menu-nav-item">Bento Box</li>
-                        <li className="menu-nav-item">Fried Rice</li>
-                        <li className="menu-nav-item">Chow Mein</li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/slush`}>Slush(Ice)</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/milkTea`}>Milk Tea</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/snow`}>Snow</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/premiumTea`}>Espresso Premium Tea</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/rosetea`}>Rose Tea</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/yogurtDrinks`}>Yogurt Drinks</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/flavoredTea`}>Flavored Tea</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/flirtymilk`}>Flirty Milk</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/fruityDelight`}>Fruity Delight</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/coffee`}>Coffee</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/snacks`}>Snack</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/eggpuffs`}>Egg Puffs</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/riceBowl`}>Rice Bowl</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/bentoBox`}>Bento Box</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/friedRice`}>Fried Rice</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/chowMein`}>Chow Mein</Link></li>
+                        <li className="menu-nav-item"><Link to={`/menu/Category/makeYourOwn`}>Make Your Own</Link></li>
                     </ul>
         </nav>
         <Outlet />
 
             <Routes>
-            <Route path="/Category" element={<Category menuData={data.slush} />} />
+            <Route path="/Category/:menuItemId" element={<Category menuData={data} />} />
             </Routes>
     </div>
   );
