@@ -1,61 +1,312 @@
 .checkout-container {
-    margin-top: 5rem;
-    border: 1px solid red;
-}
-
-.checkout-container {
-    max-width: 1536px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    }
-    
-    /* 2xl */
-    @media (max-width: 1536px) {
+    margin-top: 5rem;
+    border: 1px solid red;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+.checkout-background {
+    background-color: #777;
+}
+
+
+            /* Checkout Form */
+.checkout-order-details {
+    width:45%;
+    margin: 4rem 0rem;
+    font-size: 1.5rem;;
+}
+
+.checkout-order-details, .checkout-overview-form {
+    background-color: var(--main-background);
+    box-shadow: 3px 5px 3px 5px black;
+}
+
+.pickup-type {
+    text-align: center;
+}
+
+.checkout-form {
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+
+.payment,
+.pickup-time {
+  flex: 1; /* This will make the sections take equal width */
+}
+
+.payment label, .pickup-time label {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+
+
+            /* PAYMENT SECTION */
+
+.payment {
+    margin-left: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.payment-option {
+    width: 95%;
+    border: 3px solid gray;
+    border-radius: 5%;
+    padding: .3em;
+    display: flex;
+    align-items: center;
+}
+
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type=radio]:checked {
+    accent-color: orange;
+ }
+
+
+                /* PICK UP SECTION */
+
+.pickup-time {
+    width: 100%;
+}
+
+
+select#myDropdown {
+    margin-top:.95rem;
+    width: 95%;
+    border: 3px solid gray;
+    border-radius: 5%;
+    padding: 1em;
+}
+
+/* 
+
+
+USE LOCAL STORAGE
+make checkut responsive
+add javscript , at least template of the math
+make confirm order component page,
+make confirmed thanks for your order page component
+*/
+
+
+
+            /* Checkout OVERVIEW */
+
+.checkout-overview-container {
+    width: 25%;
+    margin: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.checkout-overview-form, .checkout-order-details {
+    background-color: var(--main-background);
+    padding: 1em;
+}
+
+.checkout-overview-form h1 {
+    margin-left: 1rem;
+}
+
+        /* ORDERS TOP AREA */
+        .orders-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+          }
+          
+          .order-item {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .order-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 95%;
+          }
+          
+          .addDelete-btns {
+            margin-right: 1rem;
+            display: flex;
+            justify-content: end;
+            flex-direction: row;
+            gap: 0.5rem; /* Adjust the gap as needed */
+          }
+          
+          .addDelete-btns button {
+            padding: 0.5em 1em;
+            border: none;
+          }
+                /* MISC COSTS */
+
+.misc-cost {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.delivery-cost, .service-fee, .tip-cost, .sub-total, .tax-total, .total-cost, .discount-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery-cost p, .service-fee p, .tip-cost p, .sub-total p, .tax-total p, .discount-total p {
+    margin-right: 1rem;
+}
+
+.tip-cost {
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.tip-btns {
+    display: flex;
+    justify-content: center;
+    margin-left: -2rem;
+    margin-top: -.5rem;
+}
+
+.tip-button {
+    width: 5rem;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: .5em;
+    transition: background .1s;
+}
+
+.tip-button:active {
+    background-color: var(--main-orange);
+
+}
+
+.total-cost h2 {
+    margin-right: 1rem;
+}
+.coupon {
+    display: flex;
+    width: 100%;
+    gap: .5rem;
+}
+
+.coupon input  {
+    width: 80%;
+    padding: .5em;
+    text-transform: uppercase;
+}
+
+.coupon button {
+    background-color: var(--main-orange);
+    border-radius: 10%;
+    width: 20%;
+}
+
+
+.proceed {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.5em;
+    background-color: var(--main-orange);
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+/* PAYMENT FORM */
+
+/* Hide the default spin buttons for number inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.user-payment {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6rem;
+
+}
+
+.card-number, .card-holder-name, .card-month, .card-year, .card-CVV {
+    padding: 2em;
+    color:#777;
+    border: 2px solid #777;
+    border-radius: 5%;
+    font-size: 1.5;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+    /* @media (max-width: 1536px) {
     .checkout-container {
     max-width: 1280px;
     }
     }
     
-    /* xl */
     @media (max-width: 1280px) {
     .checkout-container {
     max-width: 1024px;
     }
     }
     
-    /* lg */
     @media (max-width: 1024px) {
     .checkout-container {
     max-width: 768px;
     }
     }
     
-    /* md */
     @media (max-width: 768px) {
     .checkout-container {
     max-width: 640px;
     }
     }
     
-    /* sm */
     @media (max-width: 640px) {
     .checkout-container {
     max-width: 475px;
     }
     }
     
-    /* xs */
     @media (max-width: 475px) {
     .checkout-container {
     width: 100%;
     }
     }
     
-    /* xs around iphone 6 gen */
     @media (max-width: 380px) {
     .checkout-container {
     width: 100%;
     }
-    }
+    } */

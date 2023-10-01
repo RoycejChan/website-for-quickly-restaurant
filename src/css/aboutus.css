@@ -10,13 +10,13 @@
     width: 100%;
   }
 
-  .aboutus-img {
+  /* aboutus-img {
     background-image: url('../assets/aboutusheader.jpeg');
     background-repeat: no-repeat;
-    height: 100%; /* Use 100% height to cover the full viewport height */
+    height: 100%; 
     background-position: center top;
-    background-size: cover; /* Cover the entire container while maintaining aspect ratio */
-  }
+    background-size: cover; 
+  } */
   
   .aboutus-content {
     position: absolute;
