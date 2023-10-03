@@ -8,26 +8,46 @@ export default function NavBar() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    console.log("menuOpen:", menuOpen); // Add this line for debugging
   };
 
   return (
     <>
-      <div className={`navBar-Container ${menuOpen ? "nav-open" : ""}`}>
-        <img src={logo} alt="Quickly Logo" className="nav-logo" data-aos="flip-up" />
+      <div className="navigation">
+        <div className="navBar-Container">
+          <img src={logo} alt="Quickly Logo" className="nav-logo" data-aos="flip-up" />
 
-        <ul className={`nav-list ${menuOpen ? "nav-open" : "nav-close"}`} data-aos="slide-left">
-          <li className={`list-item ${menuOpen ? "nav-open" : "nav-close"}`}><Link to="/">Home</Link></li>
-          <li className={`list-item ${menuOpen ? "nav-open" : "nav-close"}`}><Link to="/menu">Menu</Link></li>
-          <li className={`list-item ${menuOpen ? "nav-open" : "nav-close"}`}><Link to="/about">About Us</Link></li>
-          <li className={`list-item ${menuOpen ? "nav-open" : "nav-close"}`}><Link to="/contact">Contact Us</Link></li>
-          <Link to="checkout"><button className="nav-btn">Checkout</button></Link>
-        </ul>
-        <div className="location">
-          <img src={pinIcon} alt="" data-aos="slide-down" data-aos-duration="2000" />
-          <li className="list-item-location">Stockton CA</li>
+          {/* Desktop Navigation */}
+          <ul className="nav-list" data-aos="slide-left">
+            <li className="list-item"><Link to="/">Home</Link></li>
+            <li className="list-item"><Link to="/menu">Menu</Link></li>
+            <li className="list-item"><Link to="/about">About Us</Link></li>
+            <li className="list-item"><Link to="/contact">Contact Us</Link></li>
+            <Link to="checkout"><button className="nav-btn">Checkout</button></Link>
+          </ul>
+
+          <div className="location">
+            <img src={pinIcon} alt="" data-aos="slide-down" data-aos-duration="2000" />
+            <li className="list-item-location">Stockton CA</li>
+          </div>
         </div>
-        <button className="show-nav" onClick={toggleMenu}>SHOW NAV</button>
+
+        {/* Mobile Navigation */}
+        <button className="show-mobile-nav" onClick={toggleMenu}>
+         ≡
+        </button>
+        {menuOpen && (
+          <div className={`mobile-nav-container ${menuOpen ? 'show' : ''}`} data-aos="slide-down">
+            <img src={logo} alt="Quickly Logo" className="mobile-nav-logo" data-aos="flip-up" />
+            <nav>
+              <ul className="mobile-nav">
+                <li className="mobile-list-item"><Link to="/menu">Menu</Link></li>
+                <li className="mobile-list-item"><Link to="/about">About Us</Link></li>
+                <li className="mobile-list-item"><Link to="/contact">Contact Us</Link></li>
+                <Link to="checkout"><button className="mobile-nav-btn">Checkout</button></Link>
+              </ul>
+            </nav>
+          </div>
+        )}
       </div>
     </>
   );

@@ -7,6 +7,10 @@ import bubbleteaimg from "../assets/bubbleteaimg.png"
 export default function Menu() {
     const { menuItemId } = useParams();
 
+  
+
+
+
   return (
     <div className="menu-background">
     <div className="menu-container" data-aos="slide-up">

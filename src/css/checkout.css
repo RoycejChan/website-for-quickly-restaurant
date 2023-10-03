@@ -313,14 +313,16 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     }
     
-    @media (max-width: 1024px) {
+    @media (max-width: 1044px) {
         .checkout-container {
             max-width: 1280px;
             display: flex;
             flex-direction: column;
             align-items: center;
             }
-        
+        .checkout-background {
+            margin-top:-5rem;
+        }
             .checkout-overview-container {
                 width: 80%;
             }
@@ -358,10 +360,26 @@ input[type="number"]::-webkit-outer-spin-button {
     .checkout-container {
     width: 100%;
     }
+    .checkout-order-details {
+        width: 70%;
+        font-size: 1.3rem;
+    }
+    .checkout-form, .checkout-form label {
+        font-size: 1rem;
+        flex-direction: column;
+    }
+
     }
     
-    @media (max-width: 380px) {
+    @media (max-width: 422px) {
     .checkout-container {
     width: 100%;
+    }
+    .tip-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .tip-btns button {
+        width: 100%;
     }
     } 

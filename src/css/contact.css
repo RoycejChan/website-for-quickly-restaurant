@@ -72,12 +72,15 @@
     }
     
     /* lg */
-    @media (max-width: 1024px) {
+    @media (max-width: 1044px) {
     .container {
     max-width: 768px;
     }
     .contact-form {
         width: 60%;
+    }
+    .contact-container {
+        margin-top: 2rem !important;
     }
     }
     
@@ -134,6 +137,10 @@
     .contact-message {
         width: 20ch;
         font-size: 1.5rem;
+        margin-left: -1.5rem;
+    }
+    .contact-header {
+        margin-left: -2rem;
     }
     .form-btn {
         width: 45%;
@@ -145,5 +152,12 @@
     @media (max-width: 380px) {
     .container {
     width: 100%;
+    }
+    .contact-form label, .contact-form input, .contact-form textarea{
+        font-size: .8rem;
+        margin-left: -2rem;
+    }
+    .contact-message, .contact-header {
+        margin-left: -2rem;
     }
     }

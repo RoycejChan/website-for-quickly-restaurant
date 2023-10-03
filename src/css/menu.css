@@ -103,6 +103,11 @@
     border-width: 7px; /* Increase border width on hover (adjust as needed) */
 }
 
+.menu-object-selected {
+    background-color: pink; /* Change this to your desired selected style */
+    /* Add other selected styles here */
+  }
+
 .menuItem-price {
     color:var(--main-orange);
 }
@@ -128,12 +133,12 @@
     }
     
     /* lg */
-    @media (max-width: 1024px) {
+    @media (max-width: 1044px) {
     .menu-container {
     max-width: 768px;
     }
-    .menu-header {
-        margin-top: -9rem;
+    .menu-header h1 {
+        margin-top: 3rem;
     }
 
     .menu-object {
@@ -186,6 +191,10 @@
         font-size: 1.5rem;
         margin-left: -3rem;
     }
+    .menu-object-flex {
+        width:75%;
+        margin-left: .5rem;
+    }
     }
     
     /* xs around iphone 6 gen */
@@ -201,5 +210,9 @@
     .menu-nav {
         margin-left: -3rem;
         margin-right: 1rem;
+    }
+    .menu-object-flex {
+        width:70%;
+        margin-left: 1rem;
     }
     }

@@ -1,6 +1,8 @@
 .aboutus-container {
     position: relative;
     color:var(--main-text);
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .aboutus-img-container {
@@ -106,6 +108,7 @@
     .aboutus-header {
       font-size: 6.5rem;
       width: 8ch;
+      margin-top: 0rem;
     }
 
     .aboutus-message {
@@ -140,10 +143,15 @@
     .aboutus-message {
       font-size: 1rem;
     }
+    .location-details-list-container {
+      width: 90%;
+    }
   }
   
   @media (max-width: 640px) {
-
+    .aboutus-header {
+      font-size: 5rem;
+    }
     .location-details-header {
       font-size: 2rem;
       margin-bottom:-1rem;
@@ -205,38 +213,40 @@
 
     .aboutus-message {
       font-size: 1rem;
-      width: 50ch;
+      width: 48ch;
       margin-left:1.5rem;
     }
 
     .location-details-list li {
       font-size: 1rem;
       text-align: left;
-      width: 100%;
 
     }
     .location-details-list-container {
-      margin-left:-1.5rem;
-      
+      margin-left:-3.5rem;
+      width: 100%;
     }
   }
 
 
   @media (max-width: 475px) {
+    .aboutus-header {
+      font-size: 5rem;
+    }
     .aboutus-message {
       font-size: 1rem;
-      width: 95%;
-      
+      width: 90%;
     }
 
     .location-details-list li {
       font-size: 1rem;
       text-align: left;
-      width: 100%;
     }
     .location-details-list-container {
-      margin-left:-1.5rem;
-      
+      margin-left:-3.5rem;
+    }
+    .google-location-img {
+      margin-left: -1rem;
     }
   }
   @media (max-width: 410px) {
@@ -249,7 +259,9 @@
   }
 
   @media (max-width: 380px) {
-
+    .aboutus-header {
+      font-size: 4rem ;
+    }
     .aboutus-message {
       font-size: 1rem;
       width: 90%;

@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top:10rem;
 }
 
 .tou-header {
@@ -61,11 +60,13 @@
     }
     
     /* lg */
-    @media (max-width: 1024px) {
+    @media (max-width: 1044px) {
     .container {
     max-width: 768px;
     }
-
+    .tou-container {
+        margin-top: 2rem !important; 
+    }
    
     }
     
@@ -107,7 +108,6 @@
     }
     .tou-container {
         max-width: 100%;
-        border: 1px solid blue;
     }  
     .tou-bold {
         font-size: 1.5rem;
@@ -118,12 +118,17 @@
 }
 
 /* xs around iphone 6 gen */
-@media (max-width: 380px) {
+@media (max-width: 390px) {
     .container {
         width: 370px;
     }
     .tou-main-message {
         width: 37ch;
         font-size: 1rem;
+        margin-left: -1rem;
+
     }
-}
+    .aot {
+        margin-left:2.5rem;
+    }
+    }  
