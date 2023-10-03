@@ -40,10 +40,11 @@ export default function NavBar() {
             <img src={logo} alt="Quickly Logo" className="mobile-nav-logo" data-aos="flip-up" />
             <nav>
               <ul className="mobile-nav">
-                <li className="mobile-list-item"><Link to="/menu">Menu</Link></li>
-                <li className="mobile-list-item"><Link to="/about">About Us</Link></li>
-                <li className="mobile-list-item"><Link to="/contact">Contact Us</Link></li>
-                <Link to="checkout"><button className="mobile-nav-btn">Checkout</button></Link>
+                <li className="mobile-list-item" onClick={toggleMenu}><Link to="/">Home</Link></li>
+                <li className="mobile-list-item" onClick={toggleMenu}><Link to="/menu">Menu</Link></li>
+                <li className="mobile-list-item" onClick={toggleMenu}><Link to="/about">About Us</Link></li>
+                <li className="mobile-list-item" onClick={toggleMenu}><Link to="/contact">Contact Us</Link></li>
+                <Link to="checkout"><button className="mobile-nav-btn" onClick={toggleMenu}>Checkout</button></Link>
               </ul>
             </nav>
           </div>

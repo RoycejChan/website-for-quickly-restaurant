@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image1 from "./../assets/quicklyGallery/image1.jpg"
 import image2 from "./../assets/quicklyGallery/image2.jpg"
 import image3 from "./../assets/quicklyGallery/image3.jpg"
@@ -18,6 +18,7 @@ import renoimage from "./../assets/quicklyGallery/renoimage.jpg"
 
 
 export default function Home() {
+
     return (
         <div className="home-container">
                 <div className="photo-gallery-container">
@@ -28,7 +29,7 @@ export default function Home() {
 
                         <div className="photo-column">
                             <div className="photo" id="one" >
-                                <img src={image1} alt="" className=" orange-border"/>
+                                <img src={image1} alt="" className=" orange-border"  />
                             </div>
                             <div className="photo" id="two">
                                 <img src={image3} alt="" className="green-border" />
