@@ -135,33 +135,38 @@
   background-color: var(--main-orange);
 }
 
-
-@media (max-width: 1044px) {
-  .show-mobile-nav {
-    display: flex;
-  }
-}
-
-
 @media (max-width: 1044px) {
 
     .navBar-Container {
       display: none;
+    }
+
+    .show-mobile-nav {
+      display: flex;
     }
   
 }
 
 /* md */
 @media (max-width: 768px) {
-
+  .mobile-nav {
+    gap:1.5rem;
+  }
+  .mobile-nav li, .mobile-nav-btn {
+    font-size: 2rem;
+  }
   }
   
   /* sm */
   @media (max-width: 640px) {
-  .container {
-  max-width: 475px;
-  }
-  }
+    .mobile-nav {
+      margin-top: -10rem;
+      gap:1.5rem;
+    }
+    .mobile-nav li, .mobile-nav-btn {
+      font-size: 1.5rem;
+    }
+}
   
   /* xs */
   @media (max-width: 475px) {
@@ -172,8 +177,8 @@
     font-size: 2.5rem;
   }
   .mobile-nav {
-    gap:1rem;
-    margin-top: -9rem;
+    gap:1.2rem;
+    margin-top: -7rem;
     margin-left: -1.5rem;
   }
   .mobile-nav li, .mobile-nav-btn {
@@ -184,10 +189,8 @@
   
   /* xs around iphone 6 gen */
   @media (max-width: 400px) {
-  .container {
-  width: 100%;
-  }
   .mobile-nav {
+    margin-top: -13rem;
     gap:1rem;
   }
   .mobile-nav li, .mobile-nav-btn {
