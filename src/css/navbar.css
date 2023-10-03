@@ -171,8 +171,16 @@
   .show-mobile-nav {
     font-size: 2.5rem;
   }
-  
+  .mobile-nav {
+    gap:1rem;
+    margin-top: -9rem;
+    margin-left: -1.5rem;
   }
+  .mobile-nav li, .mobile-nav-btn {
+    font-size: 1.4rem;
+  }
+  }
+  
   
   /* xs around iphone 6 gen */
   @media (max-width: 400px) {
@@ -180,9 +188,27 @@
   width: 100%;
   }
   .mobile-nav {
-    gap:2rem;
+    gap:1rem;
   }
   .mobile-nav li, .mobile-nav-btn {
     font-size: 1.5rem;
   }
   }
+
+  @media (max-width: 350px) {
+    .container {
+    width: 100%;
+    }
+    .mobile-nav-logo {
+      width: 15rem;
+      flex: 0 0 auto;
+    }
+    .mobile-nav {
+      gap:.9rem;
+      margin-top: -10rem;
+      margin-left: -2rem;
+    }
+    .mobile-nav li, .mobile-nav-btn {
+      font-size: 1.3rem;
+    }
+    }
