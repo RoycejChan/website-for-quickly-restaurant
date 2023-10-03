@@ -154,7 +154,6 @@
   }
   .mobile-nav li, .mobile-nav-btn {
     font-size: 2rem;
-    border: 1px solid green;
 
   }
   }
@@ -167,7 +166,6 @@
     }
     .mobile-nav li, .mobile-nav-btn {
       font-size: 1.5rem;
-    border: 1px solid yellow;
 
     }
 }
@@ -187,7 +185,6 @@
   }
   .mobile-nav li, .mobile-nav-btn {
     font-size: 1.4rem;
-    border: 1px solid blue;
 
   }
   }
@@ -201,7 +198,6 @@
   }
   .mobile-nav li, .mobile-nav-btn {
     font-size: 1.5rem;
-    border: 1px solid red;
   }
   }
 
@@ -220,7 +216,6 @@
     }
     .mobile-nav li, .mobile-nav-btn {
       font-size: 1.3rem;
-    border: 1px solid orange;
 
     }
     }
