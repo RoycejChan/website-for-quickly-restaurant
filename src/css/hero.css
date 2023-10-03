@@ -18,7 +18,7 @@
 
 .hero-header {
   margin: 0;
-  font-size: 8rem;
+  font-size: 8rem ;
   z-index: 1; 
   background: linear-gradient(to right, var(--main-orange), var(--main-green));
   -webkit-background-clip: text;
@@ -32,7 +32,7 @@
 .hero-btn  {
   margin-top: 20px; 
   padding: 1em 3em; 
-  font-size: 1.3rem;
+  font-size: 1.3rem ;
   background-color:var(--main-green);
   color: var(--main-text);
   border-radius: 15%;
@@ -103,7 +103,7 @@
   }
   
   /* xs around iphone 6 gen */
-  @media (max-width: 4000px) {
+  @media (max-width: 400px) {
     .hero-header {
       font-size: 4rem;
     }
