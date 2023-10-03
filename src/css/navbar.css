@@ -28,7 +28,6 @@
   padding: 0;
   justify-content: center;
   flex: 1;
-
 }
 
 .nav-list li {
@@ -44,6 +43,11 @@
   margin-right: 1.5rem;
 }
 
+.location {
+  display: flex;
+  align-items: center;
+}
+
 .nav-btn {
   background-color: var(--main-orange);
   border: 5px solid var(--main-blue);
@@ -53,33 +57,85 @@
 }
 
 
-@media (max-width: 1280px) {
-  
-  .navBar-Container {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;
 
+
+
+@media (min-width: 1044px) {
+  .show-nav {
+    display: none;
+  }
+
+  
+}
+
+
+@media (max-width: 1044px) {
+  .navBar-Container {
+    flex-direction: column;
   }
 
   .nav-list {
-    display: grid; /* Use CSS Grid layout */
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 1rem;
-    align-items: center;
-    justify-items: center; 
-    margin-top: 1rem;
+    display: none;
   }
 
-  .nav-list li {
-    margin: 0; 
-    margin-bottom: 1rem; 
+  .nav-list.nav-open {
+    display: flex;
+    visibility: visible;
+    background-color: red;
+    margin-left:-67rem;
 
-  .nav-btn {
-    margin-top: auto; 
   }
-
-  .list-item-location {
-    display: none; 
+  .list-item.nav-open {
+    display:flex;
+    visibility: visible;
   }
 }
-}
+
+/* md */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list.nav-open {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    margin-left:-15rem;
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+    gap:3rem;
+  }
+
+  .list-item.nav-open {
+    display:flex;
+    visibility: visible;
+    gap:2rem;
+  }
+
+  .navBar-Container.nav-open {
+    height: 50%;
+  }
+
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+  .container {
+  max-width: 475px;
+  }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+  .container {
+  width: 100%;
+  }
+  }
+  
+  /* xs around iphone 6 gen */
+  @media (max-width: 380px) {
+  .container {
+  width: 100%;
+  }
+  }

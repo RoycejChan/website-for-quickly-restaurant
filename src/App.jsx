@@ -8,8 +8,8 @@ import Privacypolicy from "./pages/privacypolicy";
 import About from "./pages/About";
 import Menu from "./pages/menu";
 import Checkout from "./pages/checkout";
-import Layout from "./components/Navigation/Homelayout"; 
-
+import Layout from "./components/Navigation/Homelayout";
+import Confirmation from "./pages/checkoutConfirmation";
 
 import "./css/navbar.css";
 import "./css/global.css";
@@ -43,6 +43,8 @@ export default function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/Termsofuse" element={<Termsofuse />} />
           <Route path="/Privacypolicy" element={<Privacypolicy />} />
+          <Route path="/confirmation" element={<Confirmation />} />
+
           
       </Routes>
       <Footer />

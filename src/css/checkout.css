@@ -4,7 +4,6 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     margin-top: 5rem;
-    border: 1px solid red;
     display: flex;
     gap: 3rem;
     justify-content: center;
@@ -47,7 +46,31 @@
     width: 100%;
 }
 
+            /* USER INFO SECTION */
 
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.username-info, .useremail-info, .usernumber-info {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content:space-between;
+}
+
+.username-info input, .useremail-info input, .usernumber-info input {
+    width: 75%;
+    padding: 1em;
+}
+
+.username-info input:hover, .useremail-info input:hover, .usernumber-info input:hover{
+    width: 75%;
+    border: 1px solid orange;
+}
 
             /* PAYMENT SECTION */
 
@@ -66,6 +89,13 @@
     padding: .3em;
     display: flex;
     align-items: center;
+}
+
+.card-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -94,15 +124,6 @@ select#myDropdown {
     padding: 1em;
 }
 
-/* 
-
-
-USE LOCAL STORAGE
-make checkut responsive
-add javscript , at least template of the math
-make confirm order component page,
-make confirmed thanks for your order page component
-*/
 
 
 
@@ -269,9 +290,20 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
-    /* @media (max-width: 1536px) {
+     @media (max-width: 1536px) {
     .checkout-container {
     max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .checkout-overview-container {
+        width: 80%;
+    }
+    .checkout-order-details {
+        width: 80%;
+        
     }
     }
     
@@ -282,11 +314,34 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     
     @media (max-width: 1024px) {
-    .checkout-container {
-    max-width: 768px;
-    }
+        .checkout-container {
+            max-width: 1280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        
+            .checkout-overview-container {
+                width: 80%;
+            }
+            .checkout-order-details {
+                width: 80%;
+                
+            }
+            .card-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap:1rem;
+            }
     }
     
+    /* .card-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+} */
     @media (max-width: 768px) {
     .checkout-container {
     max-width: 640px;
@@ -309,4 +364,4 @@ input[type="number"]::-webkit-outer-spin-button {
     .checkout-container {
     width: 100%;
     }
-    } */
+    } 

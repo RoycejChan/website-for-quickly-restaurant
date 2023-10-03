@@ -5,22 +5,33 @@ export default function Category({ menuData }) {
   const { menuItemId } = useParams();
   const selectedMenu = menuData[menuItemId];
 
-  // Initialize the state variable to store selected menu items
+  // Load selected items from local storage when the component loads
+  useEffect(() => {
+    const selectedItemsJSON = localStorage.getItem("selectedItems");
+    if (selectedItemsJSON) {
+      setSelectedItems(JSON.parse(selectedItemsJSON));
+    }
+  }, []);
+
   const [selectedItems, setSelectedItems] = useState([]);
 
-  useEffect(() => {
-    console.log(selectedItems);
-  }, [selectedItems]);
-
   const handleMenuItemClick = (menuItem) => {
-    // Add the selected menu item to the state variable
     setSelectedItems([...selectedItems, menuItem]);
   };
+
+  // Save the selected items to local storage whenever it changes
+  useEffect(() => {
+    const selectedItemsJSON = JSON.stringify(selectedItems);
+
+    localStorage.setItem("selectedItems", selectedItemsJSON);
+  }, [selectedItems]);
 
   if (!selectedMenu) {
     return <div>Menu item not found.</div>;
   }
 
+
+  
   return (
     <div className="menu-object">
       {selectedMenu.map((menuItem, index) => (
