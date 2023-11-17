@@ -2,7 +2,7 @@
 
 A Website I made for the Restuarant Chain 'Quickly' for their Stockton, CA branch <br/>
 
-Link to Project: <a src="https://stocktonquickly.netlify.app/">Quickly Website Project</a>
+Link to Project: <a href="https://stocktonquickly.netlify.app/" target="blank_">Quickly Website Project</a>
 
 <img src="https://i.gyazo.com/9038d0bde66f5ed4308af71c081bd76c.jpg" style="width:1500px; height:500px"/>
 
